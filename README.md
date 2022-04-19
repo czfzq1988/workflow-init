@@ -187,3 +187,11 @@ package.json 中,将原来 commit 配置,变更为自定义配置
   }
 }
 ```
+
+## 单元测试
+
+### 代码 push 前进行单元测试
+
+```
+npx husky add .husky/pre-push "npm test" # 提交代码前,跑一遍测试用例
+```
